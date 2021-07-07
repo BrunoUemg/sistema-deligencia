@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body .cad{
+    background-color: #f1f1f1;
+    margin-left:40px;
+    
+    display:relative;
+  }
+  
+  #regForm .cad{
+    background-color: #ffffff;
+    margin-top: 88px ;
+    margin-left: 25%;
+    margin-bottom: 250px;
+    font-family: Raleway;
+    padding: 40px;
+    width: 40%;
+    border-radius: 8px;
+    min-width: 300px;
+  }
+  
+  #regForm h1  .cad{
+    text-align: center;
+    
+  }
+  
+  input {
+      margin-top: 2px;
+    padding: 5px 5px;
+    width: 70%;
+    font-size: 16px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+  .control {
+      text-align: left;
+  }
+  button  {
+    background-color: #4CAF50;
+    color: #fafafa;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    background-color: #3bad3f ;
+
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin-top:550px;
+    margin-left: 40px;
+    max-width: 1100px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: relative;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #4CAF50;
+  }
+
+  @media (max-width: 700px){
+    #regForm .cad
+    {
+        margin-left: 12%;
+     
+    }
+    }
